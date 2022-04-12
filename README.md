@@ -1,3 +1,3 @@
 # Cryptopunks Case Study
 
-_see (prompt)[./prompt.pdf]__
+See (prompt)[./prompt.pdf]
