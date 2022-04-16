@@ -135,3 +135,12 @@ def get_txn_from_hash(txn_hash, gas_in_wei = True, key = key):
         data['gasPrice'] = round(int(data['gasPrice'], 16), 6)
     return data
     
+def get_collection_stats(collection = 'cryptopunks'):
+    url = f"https://api.opensea.io/api/v1/collection/{collection}/stats"
+    response = requests.request("GET", url)
+    return response.json()
+
+def get_collection(collection = 'cryptopunks'):
+    url = f"https://api.opensea.io/api/v1/collection/{collection}"
+    response = requests.get(url)
+    return response.json()
