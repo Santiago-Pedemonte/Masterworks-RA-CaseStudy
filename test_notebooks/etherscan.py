@@ -6,12 +6,12 @@ import os
 
 url = 'https://api.etherscan.io/api?'
 contract_address = '0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB' # CryptoPunks contract address.
-load_dotenv('es_key.env')
+load_dotenv('../es_key.env')
 key = os.getenv('api_key')
 
 # Read in data used for `get_txs_punk`:
 
-tx_attributes_df = pd.read_json("data/txn_history-2021-10-07.jsonl", lines=True)
+tx_attributes_df = pd.read_json("../data/txn_history-2021-10-07.jsonl", lines=True)
 tx_attributes_df['date'] = pd.to_datetime(tx_attributes_df.date)
 tx_attributes_df = tx_attributes_df[["txn_type", "from", "to", "date", "eth", "punk_id", "type", "accessories"]]
 tx_attributes_df = tx_attributes_df.explode("type")
