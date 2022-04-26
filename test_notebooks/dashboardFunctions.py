@@ -1,3 +1,8 @@
+'''
+WORK IN PROGRESS
+===================================================================================
+'''
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -12,7 +17,7 @@ import PIL
 from PIL import Image
 import plotly.express as px
 from IPython import display
-
+ 
 # Data for the most up to date transaction information and the full history of calls to the CryptoPunks contract by date. (Sourced from Etherscan.io)
 
 transactions_df = pd.read_csv('data/transactions.csv', index_col = 'DateTime', parse_dates = True, infer_datetime_format = True, low_memory=False)

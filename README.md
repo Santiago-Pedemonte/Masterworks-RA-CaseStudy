@@ -6,7 +6,7 @@ Santiago Pedemonte
 This case study intends to test a candidate's ability to analyze the price performance of an artist's NFT project or collection of works by demonstrating an ability to work with APIs and perform data analysis on the NFT Market.
 
 We highly encourage writing your code in Python 3.7+ on a Jupyter Notebook, making use of the scikit-learn library.
-
+ 
 #### Data Collection
 
 - Identify a collection of NFT works or projects with robust trading activity, such as CryptoPunks or Bored Apes.
